@@ -1,0 +1,245 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 16%;
+}
+
+p{
+  padding-top: 2vw
+}
+
+/*dividers*/
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+
+/* boy adjustments in padding */
+@media only screen and (max-width: 700px){
+     body {
+          padding-top: 25vh;
+     }
+   }
+
+#Img {
+  width: 60vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Img2 {
+  width: 60vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Img3 {
+  width: 60vw;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#Img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+     padding-top: 16vh;/*position of the box*/
+     display: none; /* Hidden by default */
+     position: fixed; /* Stay in place */
+     z-index: 1; /* Sit on top */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: hidden; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+     
+     margin: auto;
+     display: block;
+     width: 80%;
+     max-width: 1000px;
+}
+
+/* Caption of Modal Image */
+#caption {
+     margin: auto;
+     display: block;
+     width: 80%;
+     max-width: 700px;
+     text-align: center;
+     color: #ccc;
+     padding: 10px 0;
+     height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+     -webkit-animation-name: zoom;
+     -webkit-animation-duration: 0.6s;
+     animation-name: zoom;
+     animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+     from {-webkit-transform:scale(0)} 
+     to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+     from {transform:scale(0)} 
+     to {transform:scale(1)}
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* The Close Button */
+.close {
+     position: absolute;
+     top: 20%;
+     right: 35px;
+     color: #f1f1f1;
+     font-size: 40px;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+   
+   .close:hover,
+   .close:focus {
+     color: #bbb;
+     text-decoration: none;
+     cursor: pointer;
+   }
+   
+   /* 100% Image Width on Smaller Screens */
+   @media only screen and (max-width: 700px){
+     .modal-content {
+       width: 100%;
+     }
+   }
+
+   /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-bg {
+    /*background-color: #6eb2ef;*/
+    background-color: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: #106eea;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+  }
+  
+  .section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .section-title h3 span {
+    color: #106eea;
+  }
+  
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+  
+  
+/*--------------------------------------------------------------
+# payments
+--------------------------------------------------------------*/
+.payments .container{
+  padding-top: 75px;
+}
+
+.payments .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.payments .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.payments .content ul li {
+display: flex;
+align-items: flex-start;
+margin-bottom: 20px;
+}
+
+.payments .content ul li:first-child {
+  margin-top: 30px;
+}
+
+.payments .content ul a {
+  background: #bbd8ff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 22px;
+  padding: 13px;
+  margin-right: 15px;
+  color: #106eea;
+  border-radius: 10px;
+}
+
+.payments .content ul a:hover {
+  background-color: yellow;
+  text-decoration: none;
+}
+
+.payments .content ul h5 {
+  font-size: 18px;
+  color: #555555;
+}
+
+.payments .content ul p {
+  font-size: 15px;
+}
+
+.payments .content p:last-child {
+  margin-bottom: 0;
+}
